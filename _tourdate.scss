@@ -1,0 +1,90 @@
+.tour {
+    padding-top: 8.6rem;
+    padding-bottom: 10rem;
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 2000px;
+
+    &__inner {
+        width: 80rem;
+    }
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        color: white;
+    } 
+    &__slogan {
+        color: #ccc;
+        font-size: 1.5rem;    
+        opacity: 0.766;
+        margin-bottom: 3rem;
+        font-style: italic;
+        text-align: center;
+    }
+    &__list {
+        background-color: #fff;
+        margin-bottom: 3rem;
+        &-item {
+            list-style-type: none;
+            color: #686868;
+            border-bottom: 1px solid;
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            &:last-child {
+                & span {
+                    background-color: #000;
+                    border-radius: 100%;
+                    padding: 0 6px;
+                    float: right;
+                }
+            }
+            & span {
+                display: inline-block;
+                background-color: hsl(6, 84%, 57%);
+                color: white;
+                padding: 0 1rem;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: calc(33.3% - 1rem);
+        & img {
+            display: block;
+        }
+        &-text {
+            background-color: white;
+            padding: 0 1.5rem;
+            h3 {
+                font-size: 1.6rem;
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+                font-weight: 300;
+            }
+            a {
+                margin-bottom: 2rem;
+            }
+        }
+        &-time {
+            color: #686868;
+            font-size: 1.3rem;    
+            opacity: 0.766;
+            margin-bottom: 1rem;
+            font-style: italic;
+            text-align: left;
+        }
+        &-desc {
+            color: #000;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+    }
+}

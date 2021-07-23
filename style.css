@@ -1,0 +1,479 @@
+.header {
+  background-color: #000;
+}
+.header__inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__logo {
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.header .mobile__btn {
+  display: none;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.header .mobile__btn ion-icon {
+  display: block;
+  font-size: 2.4rem;
+}
+.header .mobile__btn:hover {
+  background-color: #f44336;
+}
+.header__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000;
+  flex: 1;
+}
+.header__menu-item {
+  list-style-type: none;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.header__menu-item:hover .header__menu-link {
+  background-color: #ccc;
+  color: #000;
+}
+.header__menu-item:last-child {
+  margin-left: auto;
+}
+.header__menu-item:last-child ion-icon {
+  display: block;
+  font-size: 2.4rem;
+}
+.header__menu-item:last-child:hover .header__menu-link {
+  background-color: #f44336 !important;
+  color: white;
+}
+.header__menu-link {
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.banner {
+  z-index: -1;
+  margin: 0 auto;
+  position: relative;
+}
+.banner .container.banner__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+.banner__image {
+  width: 100%;
+  display: block;
+}
+.banner__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner__title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.banner__desc {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.band {
+  padding-top: 8.6rem;
+  padding-bottom: 10rem;
+}
+.band__inner {
+  width: 80rem;
+}
+.band__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.band__slogan {
+  font-size: 1.5rem;
+  color: #000;
+  opacity: 0.766;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-align: center;
+}
+.band__desc {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-bottom: 7rem;
+}
+.band__member {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.band__member-item {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: calc(33.3% - 10rem);
+  justify-content: center;
+}
+.band__member-item span {
+  text-align: center;
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.band__member-item img {
+  height: 155px;
+  border-radius: 5px;
+}
+
+.tour {
+  padding-top: 8.6rem;
+  padding-bottom: 10rem;
+  background-color: #000;
+  margin: 0 auto;
+  max-width: 2000px;
+}
+.tour__inner {
+  width: 80rem;
+}
+.tour__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: white;
+}
+.tour__slogan {
+  color: #ccc;
+  font-size: 1.5rem;
+  opacity: 0.766;
+  margin-bottom: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+.tour__list {
+  background-color: #fff;
+  margin-bottom: 3rem;
+}
+.tour__list-item {
+  list-style-type: none;
+  color: #686868;
+  border-bottom: 1px solid;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+}
+.tour__list-item:last-child span {
+  background-color: #000;
+  border-radius: 100%;
+  padding: 0 6px;
+  float: right;
+}
+.tour__list-item span {
+  display: inline-block;
+  background-color: #ed4835;
+  color: white;
+  padding: 0 1rem;
+}
+.tour__content {
+  display: flex;
+  justify-content: space-between;
+}
+.tour__item {
+  width: calc(33.3% - 1rem);
+}
+.tour__item img {
+  display: block;
+}
+.tour__item-text {
+  background-color: white;
+  padding: 0 1.5rem;
+}
+.tour__item-text h3 {
+  font-size: 1.6rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+}
+.tour__item-text a {
+  margin-bottom: 2rem;
+}
+.tour__item-time {
+  color: #686868;
+  font-size: 1.3rem;
+  opacity: 0.766;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-align: left;
+}
+.tour__item-desc {
+  color: #000;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  padding-top: 8.6rem;
+  padding-bottom: 10rem;
+}
+.contact__inner {
+  width: 80rem;
+}
+.contact__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: black;
+}
+.contact__slogan {
+  color: #686868;
+  font-size: 1.5rem;
+  opacity: 0.766;
+  margin-bottom: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__content .contact__info,
+.contact__content .contact__form {
+  width: 50%;
+}
+.contact__content .contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact__content .contact__info p {
+  font-size: 1.5rem;
+  color: #000;
+}
+.contact__content .contact__info ion-icon {
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  display: inline-block;
+}
+.contact__content .contact__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact__content .contact__form-name {
+  width: calc(50% - 1rem);
+}
+.contact__content .contact__form-name input {
+  padding: 1rem 1rem;
+}
+.contact__content .contact__form-email {
+  width: calc(50% - 1rem);
+}
+.contact__content .contact__form-email input {
+  padding: 1rem 1rem;
+}
+.contact__content .contact__form input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+}
+.contact__content .contact__form a {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.map {
+  width: 100%;
+}
+.map img {
+  width: 100%;
+  filter: grayscale(50%);
+}
+.map__inner {
+  width: 100%;
+}
+
+.footer {
+  padding-top: 8.6rem;
+  padding-bottom: 10rem;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.footer__social ion-icon {
+  font-size: 2.5rem;
+  color: #686868;
+  margin: 0 5px;
+}
+.footer span {
+  text-decoration: underline;
+}
+.footer p {
+  font-size: 1.4rem;
+  color: #686868;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 2000px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  display: inline-block;
+}
+.btn.btn--uppercase {
+  text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .band__member {
+    flex-direction: column;
+  }
+
+  .band__member-item {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .tour__content {
+    flex-direction: column;
+  }
+
+  .tour__item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__content .contact__info, .contact__content .contact__form {
+    width: 100%;
+  }
+
+  .contact__content .contact__form-name {
+    width: calc(50% - 0.5rem);
+  }
+
+  .contact__content .contact__form-email {
+    width: calc(50% - 0.5rem);
+  }
+
+  .contact__content .contact__form a {
+    margin-left: 0;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header .mobile__btn {
+    display: block;
+    margin-left: auto;
+    font-size: 2rem;
+  }
+
+  .header__menu-item {
+    width: 100%;
+  }
+
+  .header__menu-item:last-child {
+    margin-left: 0;
+  }
+
+  .banner__desc {
+    font-size: 1.3rem;
+  }
+
+  .band,
+.tour,
+.contact,
+.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .band__title {
+    margin-bottom: 1rem;
+  }
+
+  .band__desc {
+    margin-bottom: 2rem;
+  }
+
+  .contact__content .contact__info {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

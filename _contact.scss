@@ -1,0 +1,74 @@
+.contact {
+  padding-top: 8.6rem;
+  padding-bottom: 10rem;
+  &__inner {
+    width: 80rem;
+  }
+  &__title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: black;
+  }
+  &__slogan {
+    color: #686868;
+    font-size: 1.5rem;
+    opacity: 0.766;
+    margin-bottom: 3rem;
+    font-style: italic;
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    .contact__info,
+    .contact__form {
+      width: 50%;
+    }
+    .contact__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      & p {
+        font-size: 1.5rem;
+
+        color: #000;
+      }
+      & ion-icon {
+        margin-right: 1.5rem;
+        font-size: 2rem;
+        display: inline-block;
+      }
+    }
+    .contact__form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &-name {
+        width: calc(50% - 1rem);
+        & input {
+          padding: 1rem 1rem;
+        }
+      }
+      &-email {
+        width: calc(50% - 1rem);
+        & input {
+          padding: 1rem 1rem;
+        }
+      }
+      & input {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem 1rem;
+      }
+      & a {
+        justify-content: flex-end;
+        margin-left: auto;
+      }
+    }
+  }
+}

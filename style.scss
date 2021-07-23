@@ -1,0 +1,126 @@
+
+@import '_header';
+@import '_banner';
+@import '_band';
+@import '_tourdate';
+@import '_contact';
+@import '_map';
+@import '_footer';
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    // overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+.container {
+    max-width: 2000px;
+    // box-sizing: border-box;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    display: inline-block;
+    &.btn--uppercase {
+        text-transform: uppercase;
+    }
+}
+@media (max-width: 1023px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .band__member {
+        flex-direction: column;
+    }
+    .band__member-item {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .tour__content {
+        flex-direction: column;
+    }
+    .tour__item {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .contact__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__content .contact__info, .contact__content .contact__form {
+        width: 100%;
+    }
+    .contact__content .contact__form-name {
+        width: calc(50% - 0.5rem);
+    }
+    .contact__content .contact__form-email {
+        width: calc(50% - 0.5rem);
+
+    }
+    .contact__content .contact__form a {
+        margin-left: 0;
+    }
+    .header__menu {
+        display: none;
+
+    }
+    .header .mobile__btn {
+        display: block;
+        margin-left: auto;
+        font-size: 2rem;
+    }
+    .header__menu-item {
+        
+        width: 100%;
+    }
+    .header__menu-item:last-child {
+        margin-left: 0;
+    }
+    .banner__desc {
+        font-size: 1.3rem;
+    }
+    .band,
+    .tour,
+    .contact,
+    .footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .band__title {
+        margin-bottom: 1rem;
+    }
+    .band__desc {
+        margin-bottom: 2rem;
+    }
+    .contact__content .contact__info {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,52 @@
+.band {
+    padding-top: 8.6rem   ;
+    padding-bottom: 10rem ;
+    &__inner {
+        width: 80rem;
+    } 
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    } 
+    &__slogan {
+        font-size: 1.5rem;
+        color: #000;
+        opacity: 0.766;
+        margin-bottom: 2rem;
+        font-style: italic;
+        text-align: center;
+    }
+    &__desc {
+        font-size: 1.4rem;
+        text-align: justify;
+        margin-bottom: 7rem;
+    }
+    &__member {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &-item {
+            // margin-right: 5rem;
+            // margin-left: 5rem;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            width: calc(33.3% - 10rem);
+            justify-content: center;
+            & span {
+                text-align: center;
+                display: block;
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+            }
+            & img {
+                height: 155px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

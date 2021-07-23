@@ -1,0 +1,23 @@
+.footer {
+    padding-top: 8.6rem;
+    padding-bottom: 10rem;
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        & ion-icon {
+            font-size: 2.5rem;
+            color: #686868;
+            margin: 0 5px;
+        }
+    }
+    & span {
+        text-decoration: underline;
+    }
+    & p {
+        font-size: 1.4rem;
+        color: #686868;
+        text-align: center;
+    }
+}
